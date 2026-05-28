@@ -15,7 +15,7 @@ export default function App() {
   const atBottom = useAtBottom(200)
 
   return (
-    <div className="bg-hawk-black text-hawk-cream font-montserrat overflow-x-hidden">
+    <div className="bg-hawk-black text-hawk-cream font-montserrat">
       <Navbar />
       <main>
         <Hero />
