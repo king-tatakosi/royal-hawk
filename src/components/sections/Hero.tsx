@@ -19,7 +19,6 @@ export default memo(function Hero() {
         sizes="100vw"
         alt=""
         aria-hidden="true"
-        fetchPriority="high"
         loading="eager"
         decoding="async"
         className="absolute inset-0 w-full h-full object-cover object-center scale-105 pointer-events-none"
