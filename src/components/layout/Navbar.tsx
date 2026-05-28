@@ -94,7 +94,7 @@ export default memo(function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={() => setTimeout(() => setOpen(false), 50)}
                   className="font-montserrat text-sm tracking-[0.22em] uppercase text-hawk-cream/65 hover:text-gold-400 transition-colors duration-200 cursor-pointer"
                 >
                   {link.label}
@@ -102,14 +102,14 @@ export default memo(function Navbar() {
               ))}
               <a
                 href="tel:0556668965"
-                onClick={() => setOpen(false)}
+                onClick={() => setTimeout(() => setOpen(false), 50)}
                 className="mt-2 font-montserrat text-[11px] tracking-[0.25em] uppercase px-6 py-3 border border-white/20 text-hawk-cream/60 text-center hover:border-gold-400/50 hover:text-gold-400 transition-all duration-300 cursor-pointer"
               >
                 Call Us
               </a>
               <a
                 href="#contact"
-                onClick={() => setOpen(false)}
+                onClick={() => setTimeout(() => setOpen(false), 50)}
                 className="font-montserrat text-[11px] tracking-[0.25em] uppercase px-6 py-3 border border-gold-400/50 text-gold-400 text-center hover:bg-gold-400 hover:text-hawk-black transition-all duration-300 cursor-pointer"
               >
                 Book Now
