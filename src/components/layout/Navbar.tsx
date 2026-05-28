@@ -90,39 +90,30 @@ export default memo(function Navbar() {
             className="md:hidden bg-hawk-black/98 backdrop-blur-2xl border-t border-gold-400/10 overflow-hidden"
           >
             <nav className="px-6 py-7 flex flex-col gap-5" aria-label="Mobile navigation">
-              {navLinks.map((link, i) => (
-                <motion.a
+              {navLinks.map((link) => (
+                <a
                   key={link.href}
                   href={link.href}
-                  initial={{ opacity: 0, x: -16 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.07, duration: 0.3 }}
                   onClick={() => setOpen(false)}
                   className="font-montserrat text-sm tracking-[0.22em] uppercase text-hawk-cream/65 hover:text-gold-400 transition-colors duration-200 cursor-pointer"
                 >
                   {link.label}
-                </motion.a>
+                </a>
               ))}
-              <motion.a
+              <a
                 href="tel:0556668965"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.28 }}
                 onClick={() => setOpen(false)}
                 className="mt-2 font-montserrat text-[11px] tracking-[0.25em] uppercase px-6 py-3 border border-white/20 text-hawk-cream/60 text-center hover:border-gold-400/50 hover:text-gold-400 transition-all duration-300 cursor-pointer"
               >
                 Call Us
-              </motion.a>
-              <motion.a
+              </a>
+              <a
                 href="#contact"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.35 }}
                 onClick={() => setOpen(false)}
                 className="font-montserrat text-[11px] tracking-[0.25em] uppercase px-6 py-3 border border-gold-400/50 text-gold-400 text-center hover:bg-gold-400 hover:text-hawk-black transition-all duration-300 cursor-pointer"
               >
                 Book Now
-              </motion.a>
+              </a>
             </nav>
           </motion.div>
         )}
